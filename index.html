@@ -59,7 +59,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1 style="word-spacing: 12px;">Padmesh Naik</h1>
-            <<h2 style="white-space: nowrap;">Software Engineer / Data Scientist / Data Engineer</h2>
+            <<h2 style="white-space: nowrap;">Senior Software Engineer</h2>
             <a href="https://raw.githubusercontent.com/padmeshnaik/padmesh.github.io/main/Padmesh_Resume.pdf" download="Padmesh_Naik_Resume.pdf" class="btn-rounded-white" style="font-size: 18px;">Download Resume</a>
         </div>
         <!-- End #lead-content -->
@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-		    I am a skilled Computer Science professional with a Master’s from Worcester Polytechnic Institute and a Bachelor’s from the University of Mumbai, specialized in software development and data engineering. My expertise lies in developing robust software solutions using programming languages like Python, JavaScript, and Java, and leveraging powerful frameworks and tools such as Angular, React, Django, and AWS to build scalable applications. Additionally, I am proficient in managing complex databases with MongoDB, MySQL, and PostgreSQL, and adept at using modern methodologies like Agile and DevOps to optimize project delivery and efficiency. My technical proficiency is complemented by a strong foundation in data engineering, where I apply innovative data extraction and analysis techniques to enhance system capabilities and insights.
+		    I am a Senior Software Engineer with 5+ years of experience building scalable applications, data pipelines, and AI/ML solutions. My core expertise includes Python, backend development, data engineering, cloud technologies, and Generative AI, with experience developing production-grade systems using Oracle, AWS, Spark, Kafka, Docker, and Kubernetes. I have worked on large-scale financial and regulatory data platforms, automated testing and validation workflows, performance optimization, and end-to-end software delivery. I also build LLM-powered applications using Retrieval-Augmented Generation (RAG), LangChain, Pinecone, and OpenAI models. I hold a Master’s degree in Computer Science from Worcester Polytechnic Institute and enjoy building reliable, high-impact solutions to complex engineering problems.
                     </p>
                 </div>
             </div>
@@ -95,7 +95,20 @@
         <h2 class="heading">Experience</h2>
 
 	<div id="experience-timeline">
-            <div data-date="August 2024 - Present">
+			<div data-date="February 2025 - Present">
+                <h3 style="color: rgb(8, 45, 231); font-weight : 500; ">Software Engineer</h3>
+                <h4 style="color: #000000;font-weight : 400;">Bank of America </h4>
+                <ul>
+                    <li>Enhanced Basel III credit risk models in Python, updating Probability of Default (PD), Loss Given at Default (LGD), and Exposure at Default (EAD) calculations and correcting Risk-Weighted Assets (RWA) by approximately $2.1 billion.</li>
+					<li>Built end-to-end Python and Oracle data pipeline enhancements for new credit-risk parameters and regulatory fields, covering ingestion, transformation, calculation, and reporting.</li>
+					<li>Fixed an exposure-calculation defect that understated exposure by approximately $400 million, improving the accuracy of Risk-Weighted Assets (RWA) and regulatory capital calculations.</li>
+					<li>Automated 70+ SQL-based smoke-test validations using Python, reducing validation effort by approximately 90% from hours to minutes while achieving 100% table coverage.</li>
+					<li>Delivered and supported production releases across System Integration Testing (SIT), User Acceptance Testing (UAT), Pre-Production (PREPROD), and Production (PROD), including unit and regression testing, peer reviews, debugging, deployment, and post-release validation.</li>
+					<li>Resolved production data-pipeline issues including Cartesian joins, data-type mismatches, failed file archival, and environment migration inconsistencies, improving pipeline performance and reliability.</li>
+				</ul>
+            </div>
+		
+            <div data-date="August 2024 - January 2025">
                 <h3 style="color: rgb(8, 45, 231); font-weight : 500; ">Software Engineer</h3>
                 <h4 style="color: #000000;font-weight : 400;">Changing the Present (CTP) </h4>
                 <ul>
@@ -189,7 +202,27 @@
 	<div id="projects" class="background-alt">
 		<h2 class="heading">Projects</h2>
 	</div>
+	
+	<div id="projects" class="background-alt" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
 
+	<div id="imageOverlay" onclick="closeOverlay()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.8); z-index: 10;"></div>
+	<div class="project shadow-large" style="display: flex; flex-wrap: wrap; margin-bottom: 20px;min-height: 300px;">
+	    <div class="project-image" style="flex: 1; min-width: 300px; max-width: 50%; position: relative; cursor: pointer;" onclick="expandImage(this.children[0])">
+		<img src="images/img.png" style="width: 100%; height: auto;"/>
+		<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); color: white; display: flex; justify-content: center; align-items: center; opacity: 0;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+		    Click to Zoom
+		</div>
+	    </div>
+	    <div class="project-info" style="flex: 1; min-width: 700px; padding: 150px;">
+		<h2 style="font-size: 40px; margin-top: 0px ;margin-bottom: 10px;">Ace Interview</h2>
+		<p style="padding: 0px 0px 3px;">
+    	This LLM-powered mock interview application uses OpenAI GPT-4, LangChain, Pinecone, and Streamlit to generate role-specific questions, retrieve relevant context, and provide automated scoring and feedback.
+		</p>       
+		    <a href="https://github.com/padmeshnaik/Ace_Interview" target="_blank">View Project on Github</a>
+	    </div>
+	</div>
+     </div>
+	
 	<div id="projects" class="background-alt" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
 
 	<div id="imageOverlay" onclick="closeOverlay()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.8); z-index: 10;"></div>
@@ -351,72 +384,77 @@
     <div id="skills" style="padding: 50px 90px 90px;">
 	    <h2 class="heading" style="margin-bottom:25px">Skills</h2>
 	    <h3 style="margin-bottom:7px">Programming Languages</h3>
-	    <ul style="margin-bottom:40px">
-	        <li>Python</li>
-	        <li>Java</li>
-		<li>SQL</li>
-		<li>JavaScript</li>
-	        <li>TypeScript</li>
-	        <li>HTML5</li>
-		<li>CSS3</li>
-		<li>XML</li>
-	    </ul>
-	
-	    <h3 style="margin-bottom:7px">Frameworks & Libraries</h3>
-	    <ul style="margin-bottom:40px">
-		<li>Apache Spark</li>
-	        <li>Node.js</li>
-	        <li>Express.js</li>
-		<li>REST API</li>
-		<li>Jenkins</li>
-	        <li>Angular</li>
-	        <li>React</li>
-		<li>Flask</li>
-	        <li>Django</li>
-		<li>Apache Airflow</li>
-		<li>Hadoop</li>
-		<li>Apache Kafka</li>
-	        <li>Bootstrap</li>
-		<li>Microservices</li>
-		<li>Git</li>
-	        <li>Numpy</li>  <!-- Added to frameworks and libraries -->
-	        <li>Pandas</li>  <!-- Added to frameworks and libraries -->
-	        <li>Scikit-learn</li>  <!-- Added to frameworks and libraries -->
-		<li>Tensorflow</li>
-		<li>Pytorch</li>
-	    </ul>
-	
-	    <h3 style="margin-bottom:7px">Databases</h3>
-	    <ul style="margin-bottom:40px">
-	        <li>Snowflake</li>
-	        <li>MongoDB</li>
-		<li>Amazon Redshift</li>
-		<li>HDFS</li>
-	        <li>Oracle</li>
-		<li>Cassandra</li>
-	        <li>MySQL</li>
-	        <li>Postgresql</li>
-	    </ul>
-	
-	    <h3 style="margin-bottom:7px">Tools & Cloud Services</h3>
-	    <ul style="margin-bottom:40px">
-	        <li>Github</li>
-	        <li>Kubernetes</li>
-	        <li>Docker</li>
-	        <li>Tableau</li>
-		<li>AWS</li>
-		<li>Azure</li>
-		    <!-- Added to tools and platforms -->
-	    </ul>
-	    <h3 style="margin-bottom:7px">Methodologies and Practices</h3>
-	    <ul>
-	        <li>Agile</li>
-	        <li>Scrum</li>
-	        <li>Continuous Integration / Continuous Deployment (CI/CD)</li>
-	        <li>DevOps</li>
-		<li>MLOps</li>
-	        <li>Version Control</li>
-	    </ul>
+		<ul style="margin-bottom:40px">
+		    <li>Python</li>
+		    <li>SQL</li>
+		    <li>Java</li>
+		    <li>JavaScript</li>
+		    <li>TypeScript</li>
+		</ul>
+		
+		<h3 style="margin-bottom:7px">AI Engineering</h3>
+		<ul style="margin-bottom:40px">
+		    <li>Generative AI</li>
+		    <li>Large Language Models (LLMs)</li>
+		    <li>Retrieval-Augmented Generation (RAG)</li>
+		    <li>LangChain</li>
+		    <li>LangGraph</li>
+		    <li>Pinecone</li>
+		    <li>OpenAI API</li>
+		    <li>Hugging Face</li>
+		    <li>Prompt Engineering</li>
+		    <li>Vector Embeddings</li>
+		</ul>
+		
+		<h3 style="margin-bottom:7px">Data & Machine Learning</h3>
+		<ul style="margin-bottom:40px">
+		    <li>Pandas</li>
+		    <li>NumPy</li>
+		    <li>Scikit-learn</li>
+		    <li>TensorFlow</li>
+		    <li>PyTorch</li>
+		    <li>Apache Spark</li>
+		    <li>Apache Kafka</li>
+		    <li>MLflow</li>
+		</ul>
+		
+		<h3 style="margin-bottom:7px">Backend & Databases</h3>
+		<ul style="margin-bottom:40px">
+		    <li>Django</li>
+		    <li>Flask</li>
+		    <li>Node.js</li>
+		    <li>REST APIs</li>
+		    <li>Oracle</li>
+		    <li>PostgreSQL</li>
+		    <li>MySQL</li>
+		    <li>MongoDB</li>
+		    <li>Snowflake</li>
+		    <li>Amazon Redshift</li>
+		</ul>
+		
+		<h3 style="margin-bottom:7px">Cloud & DevOps</h3>
+		<ul style="margin-bottom:40px">
+		    <li>AWS</li>
+		    <li>Microsoft Azure</li>
+		    <li>Docker</li>
+		    <li>Kubernetes</li>
+		    <li>Jenkins</li>
+		    <li>Apache Airflow</li>
+		    <li>Git</li>
+		    <li>CI/CD</li>
+		</ul>
+		
+		<h3 style="margin-bottom:7px">Engineering Practices</h3>
+		<ul>
+		    <li>Unit Testing</li>
+		    <li>Mocking</li>
+		    <li>Regression Testing</li>
+		    <li>System Integration Testing</li>
+		    <li>Performance Optimization</li>
+		    <li>Production Debugging</li>
+		    <li>Agile Development</li>
+		    <li>MLOps</li>
+		</ul>
     </div>
     <!-- End #skills -->
     <div id="Publication" class="background-alt">
